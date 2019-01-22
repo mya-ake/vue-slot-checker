@@ -101,3 +101,24 @@ export default {
   },
 };
 ```
+
+## Options
+
+### `silent` (option)
+
+- type: `Boolean`
+- default: `Vue.config.silent (false)`
+  - https://vuejs.org/v2/api/#silent
+
+Don't output to log.
+
+e.g.
+
+```JavaScript
+import Vue from 'vue';
+import VueSlotChecker from 'vue-slot-checker';
+ 
+Vue.use(VueSlotChecker, {
+  silent: true,
+});
+```

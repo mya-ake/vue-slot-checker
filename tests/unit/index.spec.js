@@ -170,3 +170,32 @@ describe('Mixin', () => {
     });
   });
 });
+
+describe('Option', () => {
+  describe('silent', () => {
+    it('runs not set slots, option', () => {
+      const localVue = createLocalVue();
+      localVue.use(VueSlotChecker, { silent: true });
+
+      shallowMount(SlotsTrue, {
+        slots: {},
+        localVue,
+      });
+
+      expect(spyLog).not.toHaveBeenCalled();
+    });
+
+    it('runs not set slots, Vue.config.silent', () => {
+      const localVue = createLocalVue();
+      localVue.config.silent = true;
+      localVue.use(VueSlotChecker);
+
+      shallowMount(SlotsTrue, {
+        slots: {},
+        localVue,
+      });
+
+      expect(spyLog).not.toHaveBeenCalled();
+    });
+  });
+});
