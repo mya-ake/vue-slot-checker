@@ -1,6 +1,6 @@
 {
   "name": "vue-slot-checker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "vue-slot-checker provide functions like checking props.",
   "main": "dist/vue-slot-checker.common.js",
   "unpkg": "dist/vue-slot-checker.umd.min.js",
