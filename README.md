@@ -60,10 +60,10 @@ Use with component
 
 ```HTML
 <script>
-import { vueSlotChecker } from 'vue-slot-checker';
+import { vueSlotCheckerMixin } from 'vue-slot-checker';
 
 export default {
-  mixins: [vueSlotChecker],
+  mixins: [vueSlotCheckerMixin],
 };
 </script>
 ```

@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import VueSlotChecker, { vueSlotChecker } from '@/index';
+import VueSlotChecker, { vueSlotCheckerMixin } from '@/index';
 
 import SlotsTrue from '~fixtures/SlotsTrue';
 import ArraySlots from '~fixtures/ArraySlots';
@@ -154,7 +154,7 @@ describe('Mixin', () => {
         slots: {
           default: 'deafult slot',
         },
-        mixins: [vueSlotChecker],
+        mixins: [vueSlotCheckerMixin],
       });
 
       expect(spyLog).not.toHaveBeenCalled();
@@ -163,7 +163,7 @@ describe('Mixin', () => {
     it('runs not set slots', () => {
       shallowMount(SlotsTrue, {
         slots: {},
-        mixins: [vueSlotChecker],
+        mixins: [vueSlotCheckerMixin],
       });
 
       expect(spyLog).toHaveBeenCalledWith(buildMessage('default'));
