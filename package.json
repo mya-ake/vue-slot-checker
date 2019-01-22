@@ -14,7 +14,7 @@
     "build": "vue-cli-service build --target lib --name vue-slot-checker src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "release": "yarn build && np"
+    "release": "yarn test:unit && yarn build && np"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
