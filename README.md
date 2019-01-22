@@ -158,3 +158,11 @@ Vue.use(VueSlotChecker, {
 Vue.config.silent = process.env.NODE_ENV !== 'development';
 Vue.use(VueSlotChecker);
 ```
+
+## Contribution
+
+If you find a bug or want to contribute to the code or documentation, you can help by submitting an [issue](https://github.com/mya-ake/vue-slot-checker/issues) or a [pull request](https://github.com/mya-ake/vue-slot-checker/pulls).
+
+## License
+
+[MIT](https://github.com/mya-ake/vue-slot-checker/blob/master/LICENSE)
