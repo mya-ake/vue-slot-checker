@@ -85,8 +85,8 @@ export const warn = (msg, vm) => {
   if (Vue.config.warnHandler) {
     Vue.config.warnHandler.call(null, msg, vm, trace);
   } else if (hasConsole && !Vue.config.silent) {
-    // eslint-disable-next-line no-console
     const message = process.env.NODE_ENV !== 'test' ? `${msg}${trace}` : msg;
+    // eslint-disable-next-line no-console
     console.error(`[vue-slot-checker warn]: ${message}`);
   }
 };
