@@ -15,11 +15,14 @@ if (Vue.config.silent === false) {
     str.replace(classifyRE, c => c.toUpperCase()).replace(/[-_]/g, '');
 
   warn = (msg, vm) => {
+    const trace = vm ? generateComponentTrace(vm) : '';
+
     if (Vue.config.warnHandler) {
-      Vue.config.warnHandler.call(null, msg, vm);
+      Vue.config.warnHandler.call(null, msg, vm, trace);
     } else if (hasConsole && !Vue.config.silent) {
       // eslint-disable-next-line no-console
-      console.error(`[vue-slot-checker warn]: ${msg}`);
+      const message = process.env.NODE_ENV !== 'test' ? `${msg}${trace}` : msg;
+      console.error(`[vue-slot-checker warn]: ${message}`);
     }
   };
 
