@@ -20,8 +20,6 @@ export default {
 </script>
 ```
 
----
-
 When using components that require default slots.
 
 ```HTML
