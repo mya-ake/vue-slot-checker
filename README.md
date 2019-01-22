@@ -22,9 +22,7 @@ export default {
 
 Output image
 
-<div style="text-align: center;">
-  <img src="docs/images/screenshot.png" alt="Outputting to the console" width="600">
-</div>
+<img src="docs/images/screenshot.png" alt="Outputting to the console" width="600">
 
 
 ## Install
