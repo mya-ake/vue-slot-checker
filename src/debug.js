@@ -18,6 +18,7 @@ if (Vue.config.silent === false) {
     if (Vue.config.warnHandler) {
       Vue.config.warnHandler.call(null, msg, vm);
     } else if (hasConsole && !Vue.config.silent) {
+      // eslint-disable-next-line no-console
       console.error(`[vue-slot-checker warn]: ${msg}`);
     }
   };
