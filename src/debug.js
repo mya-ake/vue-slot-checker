@@ -8,7 +8,7 @@ export let warn = noop;
 export let generateComponentTrace = noop;
 export let formatComponentName = noop;
 
-if (process.env.NODE_ENV !== 'production') {
+if (Vue.config.silent === false) {
   const hasConsole = typeof console !== 'undefined';
   const classifyRE = /(?:^|[-_])(\w)/g;
   const classify = str =>
