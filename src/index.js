@@ -1,13 +1,11 @@
-import { buidMixin } from './mixin';
+import { mixin } from './mixin';
 
 // mixin
-export const vueSlotCheckerMixin = buidMixin();
+export const vueSlotCheckerMixin = mixin;
 
 function install(Vue, { silent = Vue.config.silent } = {}) {
-  if (install.installed) return;
+  if (install.installed || silent) return;
   install.installed = true;
-
-  const mixin = buidMixin({ silent });
 
   Vue.mixin({
     mixins: [mixin],
