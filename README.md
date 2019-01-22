@@ -20,7 +20,19 @@ export default {
 </script>
 ```
 
-Output image
+---
+
+When using components that require default slots.
+
+```HTML
+<template>
+  <div>
+    <SampleComponent/>
+  </div>
+</template>
+```
+
+It is output to the console as shown in the next image.
 
 <img src="docs/images/screenshot.png" alt="Outputting to the console" width="600">
 
