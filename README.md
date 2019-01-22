@@ -20,12 +20,12 @@ export default {
 </script>
 ```
 
-When using components that require default slots.
+When using components that require default slot.
 
 ```HTML
 <template>
   <div>
-    <SampleComponent/>
+    <SampleComponent />
   </div>
 </template>
 ```
@@ -136,4 +136,25 @@ import VueSlotChecker from 'vue-slot-checker';
 Vue.use(VueSlotChecker, {
   silent: true,
 });
+```
+
+## Example of switching in the environment
+
+```JavaScript
+import Vue from 'vue';
+import VueSlotChecker from 'vue-slot-checker';
+
+// When not used as a plugin
+if (process.env.NODE_ENV === 'development') {
+  Vue.use(VueSlotChecker);
+}
+
+// When using the silent option
+Vue.use(VueSlotChecker, {
+  silent: process.env.NODE_ENV !== 'development'
+});
+
+// When using the Vue.config.silent
+Vue.config.silent = process.env.NODE_ENV !== 'development';
+Vue.use(VueSlotChecker);
 ```
