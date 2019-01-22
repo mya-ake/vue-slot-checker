@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  slots: ['default', 'header'], // require default slot and header slot
+  slots: ['default', 'header'], // require default slot and header slot
 };
 </script>
 ```
