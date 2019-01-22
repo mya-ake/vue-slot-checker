@@ -20,6 +20,11 @@ export default {
 </script>
 ```
 
+Output image
+
+![Outputting to the console](docs/images/screenshot.png)
+
+
 ## Install
 
 ```bash
