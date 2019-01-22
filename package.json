@@ -1,15 +1,20 @@
 {
   "name": "vue-slot-checker",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+  "version": "0.0.0",
+  "description": "vue-slot-checker provide functions like checking props.",
+  "main": "dist/vue-slot-checker.common.js",
+  "unpkg": "dist/vue-slot-checker.umd.min.js",
+  "repository": "https://github.com/mya-ake/vue-slot-checker.git",
+  "bugs": {
+    "url": "https://github.com/mya-ake/vue-slot-checker/issues"
   },
-  "dependencies": {
-    "vue": "^2.5.21"
+  "author": "mya-ake <tatsuya@neko-note.help>",
+  "license": "MIT",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name vue-slot-checker src/index.js",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "np": "np"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
@@ -23,6 +28,14 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "np": "^4.0.1",
+    "vue": "^2.5.21",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue.js"
+  ]
 }
