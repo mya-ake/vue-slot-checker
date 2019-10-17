@@ -17,7 +17,7 @@
     "release": "yarn test:unit && yarn build && np"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-babel": "^4.0.2",
     "@vue/cli-plugin-eslint": "^4.0.2",
     "@vue/cli-plugin-unit-jest": "^3.3.0",
     "@vue/cli-service": "^4.0.2",
