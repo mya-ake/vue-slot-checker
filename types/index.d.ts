@@ -1,10 +1,10 @@
 import './vue';
 import {
   VueSlotCheckerPlugin,
-  vueSlotChckerMixin,
+  vueSlotCheckerMixin,
   VueSlotCheckerOption,
 } from './slot-checker';
 
 export default VueSlotCheckerPlugin;
 
-export { vueSlotChckerMixin, VueSlotCheckerOption };
+export { vueSlotCheckerMixin, VueSlotCheckerOption };
