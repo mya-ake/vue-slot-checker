@@ -5,13 +5,12 @@ import VueSlotChcker, {
   VueSlotCheckerOption,
 } from '../index';
 
+/**
+ * plugin
+ */
 Vue.use<VueSlotCheckerOption>(VueSlotChcker);
 Vue.use<VueSlotCheckerOption>(VueSlotChcker, {});
 Vue.use<VueSlotCheckerOption>(VueSlotChcker, { slient: true });
-
-const Mixin: ComponentOptions<Vue> = {
-  mixins: [vueSlotCheckerMixin],
-};
 
 const BooleanSlots: ComponentOptions<Vue> = {
   slots: true,
@@ -48,4 +47,11 @@ const ValidatorRecordSlots: ComponentOptions<Vue> = {
       },
     },
   },
+};
+
+/**
+ * mixin
+ */
+const Mixin: ComponentOptions<Vue> = {
+  mixins: [vueSlotCheckerMixin],
 };
