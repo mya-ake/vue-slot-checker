@@ -23,7 +23,7 @@ export type VueSlotCheckerOption = {
   slient?: boolean;
 };
 
-export type VueSlotCheckerPlugin = PluginObject<VueSlotCheckerOption>;
+export declare const VueSlotCheckerPlugin: PluginObject<VueSlotCheckerOption>;
 
 export declare const vueSlotChckerMixin: {
   created(): void;
