@@ -25,7 +25,7 @@ export type VueSlotCheckerOption = {
 
 export declare const VueSlotCheckerPlugin: PluginObject<VueSlotCheckerOption>;
 
-export declare const vueSlotChckerMixin: {
+export declare const vueSlotCheckerMixin: {
   created(): void;
 };
 

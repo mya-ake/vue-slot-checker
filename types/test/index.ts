@@ -1,8 +1,13 @@
 /* eslint-disable no-unused-vars */
 import Vue, { ComponentOptions } from 'vue';
-import VueSlotChcker, { vueSlotCheckerMixin } from '../../src/index';
+import VueSlotChcker, {
+  vueSlotCheckerMixin,
+  VueSlotCheckerOption,
+} from '../index';
 
-Vue.use(VueSlotChcker);
+Vue.use<VueSlotCheckerOption>(VueSlotChcker);
+Vue.use<VueSlotCheckerOption>(VueSlotChcker, {});
+Vue.use<VueSlotCheckerOption>(VueSlotChcker, { slient: true });
 
 const Mixin: ComponentOptions<Vue> = {
   mixins: [vueSlotCheckerMixin],
