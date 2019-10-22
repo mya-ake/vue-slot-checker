@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/vue-slot-checker.svg)](https://badge.fury.io/js/vue-slot-checker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![CI Status](https://github.com/mya-ake/vue-slot-checker/workflows/Main%20Workflow/badge.svg)
 
 > vue-slot-checker provide functions like checking props.
 
