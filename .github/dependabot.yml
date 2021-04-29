@@ -1,0 +1,46 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 12
+  ignore:
+  - dependency-name: typescript
+    versions:
+    - 4.1.3
+    - 4.1.4
+    - 4.1.5
+    - 4.2.2
+    - 4.2.3
+  - dependency-name: np
+    versions:
+    - 7.2.0
+    - 7.3.0
+    - 7.4.0
+  - dependency-name: "@vue/test-utils"
+    versions:
+    - 1.1.2
+    - 1.1.3
+  - dependency-name: "@vue/cli-plugin-eslint"
+    versions:
+    - 4.5.11
+  - dependency-name: "@vue/cli-plugin-unit-jest"
+    versions:
+    - 4.5.11
+  - dependency-name: "@vue/cli-plugin-babel"
+    versions:
+    - 4.5.11
+  - dependency-name: "@vue/cli-service"
+    versions:
+    - 4.5.11
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
